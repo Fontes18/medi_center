@@ -1,26 +1,62 @@
+html{
+    font-size: 20px;
+}
+
 body{
     margin: 0;
     padding: 0;
-}
-header{
-    display: flex;
+    color: white;
+    font-family: "Roboto", sans-serif;
 }
 
-.container{
+
+.container {
     display: flex;
-    width: 100vw;
     height: 130px;
-    background-color: black;
+    
 }
 
 .logo{
-    margin-left: 30px;
+    margin-left: 10%;
     display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.menu{
+    display: flex;
+    flex: 1;
     align-items: center;
 }
 
-.logo a img{
-    width: 150px;
-    height: 80px;
+nav ul,
+nav li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
+nav ul {
+    display: flex;
+}
+
+nav a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #727272;
+}
+
+nav .active a,
+nav a:hover{
+    background-color: #39aae1;
+    color: white;
+}
+
+#banner{
+    background-image:url(../images/img1.jpg);
+    background-position: end;
+    background-size:cover;
+    height: 350px;
+}
