@@ -9,15 +9,21 @@ body{
     font-family: "Roboto", sans-serif;
 }
 
+header{
+    display: flex;
+    height: 130px;
+    justify-content: center;
+
+}
+
 
 .container {
     display: flex;
-    height: 130px;
-    
+    justify-content: space-between;
+    width: 990px;
 }
 
 .logo{
-    margin-left: 10%;
     display: flex;
     align-items: center;
     flex: 1;
@@ -52,11 +58,39 @@ nav .active a,
 nav a:hover{
     background-color: #39aae1;
     color: white;
+    border-radius: 5px;
 }
 
 #banner{
+    display: flex;
+    justify-content: center;
     background-image:url(../images/img1.jpg);
     background-position: end;
     background-size:cover;
-    height: 350px;
+    height: 500px;
+}
+
+.column{
+    flex-direction: column;
+}
+.banner_headlines{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner_headlines h1{
+    color: white;
+    font-size: 50px;
+    margin: 0;
+}
+.banner_headlines h2{
+    color: white;
+    font-size: 19px;
+    margin: 0;
+}
+
+.banner_options{
+    flex: 1;
 }
